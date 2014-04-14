@@ -126,6 +126,13 @@ function last_first_classes( $objects ) {
 	 
 	// Add "last-menu-item" class to the last menu object
 	$objects[count( $objects )]->classes[] = 'last-menu-item';
+	
+	$i = 1;
+	foreach ($objects as $o) {
+		if ($o->post_parent == 0) {
+			$o->classes[] = "item-pos-".$i++;
+		}
+	}
 	 
 	// Return the menu objects
 	return $objects;
@@ -162,3 +169,4 @@ if (class_exists('MultiPostThumbnails')) {
 			)
 	);
 }
+
