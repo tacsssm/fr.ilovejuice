@@ -1,0 +1,157 @@
+@CHARSET "UTF-8";
+
+/************
+tridy pro obecny pouziti, nedavat sem zadne styly, ktere plati globalne
+************/
+
+.strong { font-weight: bold; }
+.wnormal { font-weight: normal; }
+
+.error-message { font-weight: bold; color: Red; }
+
+.floatleft { float: left; }
+.floatright { float: right; }
+
+.cleaner, .clearb, .clear { clear: both; }
+
+.align_right, .right { text-align: right; }
+.align_left, .left { text-align: left; }
+.align_center, .center { text-align: center; }
+
+.no-img-border img, .no-border { border: none; }
+
+.no-display { display: none; }
+
+.italic, .em { font-style: italic; }
+.skrt { text-decoration: line-through; }
+.no-deco { text-decoration:none; }
+
+.bck-black { background-color: black; }
+
+.tinytext{ font-size: 75%; }
+.smalltext { font-size: x-small; }
+
+.nowrap { white-space: nowrap; }
+
+/** barvy textu */
+
+.red-text { color: red; }
+
+.wi50 { width: 50px; }
+.wi75 { width: 75px; }
+.wi100 { width: 100px; }
+.wi125 { width: 125px; }
+.wi150 { width: 150px; }
+.wi175 { width: 175px; }
+.wi200 { width: 200px; }
+
+.wi50p { width: 50%; }
+.wi75p { width: 75%; }
+.wi100p { width: 100%; }
+.wi125p { width: 125%; }
+.wi150p { width: 150%; }
+.wi175p { width: 175%; }
+.wi200p { width: 200%; }
+
+.block { display: block;}
+.inline { display: inline;}
+
+/********* margin *********/
+
+.margin0 { margin: 0px; }
+.margin0-bottom { margin-bottom: 0px; }
+.margin0-left { margin-left: 0px; }
+.margin0-right { margin-right: 0px; }
+.margin0-top { margin-top: 0px; }
+
+.margin5 { margin: 5px; }
+.margin5-bottom { margin-bottom: 5px; }
+.margin5-left { margin-left: 5px; }
+.margin5-right { margin-right: 5px; }
+.margin5-top { margin-top: 5px; }
+
+.margin10 { margin: 10px; }
+.margin10-bottom { margin-bottom: 10px; }
+.margin10-left { margin-left: 10px; }
+.margin10-right { margin-right: 10px; }
+.margin10-top { margin-top: 10px; }
+
+.margin15 { margin: 15px; }
+.margin15-bottom { margin-bottom: 15px; }
+.margin15-left { margin-left: 15px; }
+.margin15-right { margin-right: 15px; }
+.margin15-top { margin-top: 15px; }
+
+.margin20 { margin: 20px; }
+.margin20-bottom { margin-bottom: 20px; }
+.margin20-left { margin-left: 20px; }
+.margin20-right { margin-right: 20px; }
+.margin20-top { margin-top: 20px; }
+
+.margin30 { margin: 30px; }
+.margin30-bottom { margin-bottom: 30px; }
+.margin30-left { margin-left: 30px; }
+.margin30-right { margin-right: 30px; }
+.margin30-top { margin-top: 30px; }
+
+
+/********* padding *********/
+
+.padding5 { padding: 5px; }
+.padding5-bottom { padding-bottom: 5px; }
+.padding5-left { padding-left: 5px; }
+.padding5-right { padding-right: 5px; }
+.padding5-top { padding-top: 5px; }
+
+.padding10 { padding: 10px; }
+.padding10-bottom { padding-bottom: 10px; }
+.padding10-left { padding-left: 10px; }
+.padding10-right { padding-right: 10px; }
+.padding10-top { padding-top: 10px; }
+
+.padding15 { padding: 15px; }
+.padding15-bottom { padding-bottom: 15px; }
+.padding15-left { padding-left: 15px; }
+.padding15-right { padding-right: 15px; }
+.padding15-top { padding-top: 15px; }
+
+.padding20 { padding: 20px; }
+.padding20-bottom { padding-bottom: 20px; }
+.padding20-left { padding-left: 20px; }
+.padding20-right { padding-right: 20px; }
+.padding20-top { padding-top: 20px; }
+
+.padding30 { padding: 30px; }
+.padding30-bottom { padding-bottom: 30px; }
+.padding30-left { padding-left: 30px; }
+.padding30-right { padding-right: 30px; }
+.padding30-top { padding-top: 30px; }
+
+/********* border *********/
+
+.border1, .border1-left, .border1-right, .border1-top, .border1-bottom,
+.border2, .border2-left, .border2-right, .border2-top, .border2-bottom,
+.border3, .border3-left, .border3-right, .border3-top, .border3-bottom
+{
+	border-color: black;
+	border-style: solid;
+	border-width: 0;
+}
+
+.border1 { border-width: 1px; }
+.border1-left { border-left-width: 1px; }
+.border1-right { border-right-width: 1px; }
+.border1-top { border-top-width: 1px; }
+.border1-bottom{ border-bottom-width: 1px; }
+
+.border2 { border-width: 2px; }
+.border2-left { border-left-width: 2px; }
+.border2-right { border-right-width: 2px; }
+.border2-top { border-top-width: 2px; }
+.border2-bottom{ border-bottom-width: 2px; }
+
+.border3 { border-width: 3px; }
+.border3-left { border-left-width: 3px; }
+.border3-right { border-right-width: 3px; }
+.border3-top { border-top-width: 3px; }
+.border3-bottom{ border-bottom-width: 3px; }

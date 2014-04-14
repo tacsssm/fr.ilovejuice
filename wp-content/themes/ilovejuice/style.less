@@ -1,0 +1,168 @@
+/*
+Theme Name: I Love Juice
+Theme URI: 
+Author: Vit Rozkovec
+Author URI: http://berries.name/
+Description: 
+Version: 0.2
+License: Aggressive Copyright
+License URI: http://aggresive-copyright.org
+Tags: 
+Text Domain: dom
+*/
+
+@import "elements.less";
+@import "bootstrap-3.1.1/less/variables.less";
+@import "bootstrap-3.1.1/less/mixins.less";
+@import "css/font/stylesheet.css";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,200&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Duru+Sans&subset=latin,latin-ext);
+@activeMenuColor: #EC2029;
+.kristen () {
+	font-family: 'kristen_itcregular';
+}
+
+body {
+	max-width: 1040px;
+	padding: 40px;
+	margin: 0 auto;
+	.kristen ();
+}
+
+header {
+	text-align: center;
+	border-top: solid 1px black;
+	.search-container {
+		padding-left: 0;
+		padding-right: 0;
+		.search {
+			padding-left: 0;
+			padding-right: 0;
+			padding-top: 15px;
+			form {
+				.input-append {
+					text-align: right;
+				}
+
+				@size: 25px;
+				input {
+					margin: 0;
+					padding: 3px 5px;
+					height: @size;
+					border: solid 1px black;
+					vertical-align: top;
+				}
+
+				button {
+					vertical-align: top;
+					.rounded (0);
+					color: white;
+					background-color: black;
+					border: solid 1px black;
+					width: @size;
+					height: @size;
+					line-height: @size;
+					text-align: center;
+					padding: 0;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.logo {
+		line-height: 210px;
+	}
+}
+
+#main-menu {
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+		.row-fluid {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	margin-right: 24px;
+	li.current-page-parent , li.current-menu-item {
+		& > a {
+			color: @activeMenuColor;
+		}
+	}
+
+	ul {
+		padding: 0 0 0 30px;
+		& > li {
+			display: inline-block;
+			vertical-align: bottom;
+			text-transform: uppercase;
+			position: relative;
+			margin: 0 7px;
+			&.first-menu-item {
+				margin-left: 0;
+			}
+
+			&.last-menu-item {
+				margin-right: 0;
+			}
+
+			& > a {
+				line-height: 30px;
+				display: inline-block;
+				color: #787878;
+				text-decoration: none;
+				border-bottom: solid 2px black;
+			}
+
+			&:hover {
+				color: #EC2029;
+				text-decoration: none;
+				.sub-menu {
+					display: block;
+					a {
+						white-space: nowrap;
+					}
+				}
+			}
+		}
+	}
+
+	.sub-menu {
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+		z-index: 100;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li {
+			display: block;
+			margin-bottom: 3px;
+			margin: 0px;
+			a {
+				color: black;
+				background-color: darken(white, 5%);
+				display: block;
+				border-top: 0px solid #dedfe3;
+				border-left: solid 2px black;
+				border-bottom: 0;
+				min-width: 150px;
+				padding: 6px 5px;
+				text-decoration: none;
+				&:hover {
+					color: #ffffff;
+					background-color: #a1a4a9;
+				}
+			}
+		}
+			background-color: darken(white, 5%);
+		border-bottom: solid 2px black;
+	}
+}
+
+footer {
+}
+

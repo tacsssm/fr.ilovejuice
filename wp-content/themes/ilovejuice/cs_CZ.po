@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Dom\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-26 01:24+0100\n"
+"PO-Revision-Date: 2014-01-23 14:37+0100\n"
+"Last-Translator: Vit Rozkovec <rozkovec.vit@seznam.cz>\n"
+"Language-Team:  <vit@berries.name>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Top Menu"
+msgstr "Horní menu"
+
+msgid "This sidebar is located above the logo."
+msgstr "Tenhle sidebar je pod hornim logem"
+
+msgid "Single right"
+msgstr "Single na pravo"
+
+msgid "Right side on the single"
+msgstr "Prava strana single"
+
+msgid "Single bottom"
+msgstr "Single dole"
+
+msgid "bottom side on the single"
+msgstr "spodni cast na singlu"
+
+msgid "more"
+msgstr "více"
+
+msgid "register"
+msgstr "registrace"
+
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Celý příspěvek <span class=\"meta-nav\">&rarr;</span>"
+
+msgid "Other articles"
+msgstr "Další příspěvky"
+
+msgid "Edit page"
+msgstr "Upravit stránku"
+
+msgid "Search Results for: %s"
+msgstr "Výsledky dotazu pro: %s"
+
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Je nám líto, Vášemu dotazu neodpovídá žádný obsah. Zkuste to, prosím, znovu s jinými klíčovými slovy."
+
+msgid "Nothing Found"
+msgstr "Nic jsme nenalezli"
+

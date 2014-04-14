@@ -1,0 +1,1 @@
+rm /data/www/cz.dom-os/wp-content/themes/dom/bootstrap-3.1.1-dist/css/bootstrap-custom.css -rf && lessc --verbose  /data/www/cz.dom-os/wp-content/themes/dom/bootstrap-3.1.1/less/bootstrap.less > /data/www/cz.dom-os/wp-content/themes/dom/bootstrap-3.1.1-dist/css/bootstrap-custom.css

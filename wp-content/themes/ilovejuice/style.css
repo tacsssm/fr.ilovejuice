@@ -1,0 +1,197 @@
+@import "css/font/stylesheet.css";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,200&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Duru+Sans&subset=latin,latin-ext);
+/*
+Theme Name: I Love Juice
+Theme URI: 
+Author: Vit Rozkovec
+Author URI: http://berries.name/
+Description: 
+Version: 0.2
+License: Aggressive Copyright
+License URI: http://aggresive-copyright.org
+Tags: 
+Text Domain: dom
+*/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* line 25, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000325}}
+body {
+  max-width: 1040px;
+  padding: 40px;
+  margin: 0 auto;
+  font-family: 'kristen_itcregular';
+}
+/* line 32, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000332}}
+header {
+  text-align: center;
+  border-top: solid 1px black;
+}
+/* line 35, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000335}}
+header .search-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 38, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000338}}
+header .search-container .search {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 15px;
+}
+/* line 43, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000343}}
+header .search-container .search form .input-append {
+  text-align: right;
+}
+/* line 48, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000348}}
+header .search-container .search form input {
+  margin: 0;
+  padding: 3px 5px;
+  height: 25px;
+  border: solid 1px black;
+  vertical-align: top;
+}
+/* line 56, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000356}}
+header .search-container .search form button {
+  vertical-align: top;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: white;
+  background-color: black;
+  border: solid 1px black;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/* line 73, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000373}}
+header .logo {
+  line-height: 210px;
+}
+/* line 78, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000378}}
+#main-menu {
+  margin-right: 24px;
+}
+/* line 79, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000379}}
+#main-menu .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 82, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000382}}
+#main-menu .container-fluid .row-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 90, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000390}}
+#main-menu li.current-page-parent > a,
+#main-menu li.current-menu-item > a {
+  color: #ec2029;
+}
+/* line 95, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000395}}
+#main-menu ul {
+  padding: 0 0 0 30px;
+}
+/* line 97, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\0000397}}
+#main-menu ul > li {
+  display: inline-block;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 7px;
+}
+/* line 103, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003103}}
+#main-menu ul > li.first-menu-item {
+  margin-left: 0;
+}
+/* line 107, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003107}}
+#main-menu ul > li.last-menu-item {
+  margin-right: 0;
+}
+/* line 111, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003111}}
+#main-menu ul > li > a {
+  line-height: 30px;
+  display: inline-block;
+  color: #787878;
+  text-decoration: none;
+  border-bottom: solid 2px black;
+}
+/* line 119, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003119}}
+#main-menu ul > li:hover {
+  color: #EC2029;
+  text-decoration: none;
+}
+/* line 122, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003122}}
+#main-menu ul > li:hover .sub-menu {
+  display: block;
+}
+/* line 124, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003124}}
+#main-menu ul > li:hover .sub-menu a {
+  white-space: nowrap;
+}
+/* line 132, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003132}}
+#main-menu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #f2f2f2;
+  border-bottom: solid 2px black;
+}
+/* line 141, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003141}}
+#main-menu .sub-menu li {
+  display: block;
+  margin-bottom: 3px;
+  margin: 0px;
+}
+/* line 145, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003145}}
+#main-menu .sub-menu li a {
+  color: black;
+  background-color: #f2f2f2;
+  display: block;
+  border-top: 0px solid #dedfe3;
+  border-left: solid 2px black;
+  border-bottom: 0;
+  min-width: 150px;
+  padding: 6px 5px;
+  text-decoration: none;
+}
+/* line 155, /data/www/fr.ilovejuice/wp-content/themes/ilovejuice/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/www\/fr\.ilovejuice\/wp-content\/themes\/ilovejuice\/style\.less}line{font-family:\00003155}}
+#main-menu .sub-menu li a:hover {
+  color: #ffffff;
+  background-color: #a1a4a9;
+}
+/*# sourceMappingURL=style.map */
