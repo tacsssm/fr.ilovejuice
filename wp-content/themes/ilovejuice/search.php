@@ -26,12 +26,12 @@
 			<?php else : ?>
 				<article id="post-0" class="post no-results not-found">
 					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'ilovejuice' ); ?></h1>
+						<h1 class="entry-title text-left"><?php _e( 'Nothing Found', 'ilovejuice' ); ?></h1>
 					</header>
 	
 					<div class="entry-content">
-						<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'palmacentrum' ); ?></p>
-						<?php get_search_form(); ?>
+						<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'ilovejuice' ); ?></p>
+						<?php //get_search_form(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
 			<?php endif; ?>

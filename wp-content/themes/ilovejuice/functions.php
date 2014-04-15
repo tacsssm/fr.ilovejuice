@@ -139,7 +139,6 @@ function last_first_classes( $objects ) {
  
 }
 
-
 function is_subcategory( $cat_id = NULL ) {
 
 	if ( $cat_id ) {
