@@ -49,8 +49,6 @@ $(document).ready(function() {
 //		iframe.attr('height', '160');
 		$('.single-post .entry-thumbnail').append(iframe);
 	}
-	
-	
 
 	
 });
