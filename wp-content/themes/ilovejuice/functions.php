@@ -169,3 +169,35 @@ if (class_exists('MultiPostThumbnails')) {
 	);
 }
 
+
+// Hook in
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+// Our hooked in function – $fields is passed via the filter!
+function custom_override_checkout_fields( $fields ) {
+
+// 	// we don't need the billing fields so empty all of them except the email
+// 	unset( $fields['billing_country'] );
+// 	unset( $fields['billing_first_name'] );
+// 	unset( $fields['billing_last_name'] );
+// 	unset( $fields['billing_company'] );
+// 	unset( $fields['billing_address_1'] );
+// 	unset( $fields['billing_address_2'] );
+// 	unset( $fields['billing_city'] );
+// 	unset( $fields['billing_email'] );
+// 	unset( $fields['billing_state'] );
+// 	unset( $fields['billing_postcode'] );
+// 	unset( $fields['billing_phone'] );
+// 	var_dump($fields);
+	
+// 	unset($fields['order']['order_comments']);
+	if (WC()->session->get( 'chosen_shipping_methods')[0] == 'local_delivery') {
+		unset($fields['billing']);
+		unset($fields['shipping']);
+		$fields['billing']=array();
+		$fields['shipping']=array();
+	}
+
+	return $fields;
+
+}
