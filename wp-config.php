@@ -73,6 +73,7 @@ $table_prefix  = 'wp_';
  * language support.
  */
 // define('WPLANG', '');
+#define('WPLANG', 'fr_FR');
 define('WPLANG', 'fr_FR');
 
 /**
