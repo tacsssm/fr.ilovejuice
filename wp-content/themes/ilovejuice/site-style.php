@@ -7,7 +7,7 @@ the_post ();
 <div class="content-wrapper">
 	<div class="container-fluid">
 		<div class="row-fluid top">
-			<div class="col-sm-12">
+			<div class="col-sm-12 content">
 					<h1>
 						<?php the_title(); ?>
 					</h1>
@@ -18,6 +18,8 @@ the_post ();
 							the_content ();
 						?>
 					</div>
+				</div>
+				<div class="clearfix">
 				</div>
 			</div>
 		</div>

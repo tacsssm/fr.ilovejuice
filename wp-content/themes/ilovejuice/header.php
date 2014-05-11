@@ -43,7 +43,7 @@
 			<div class="container-fluid">
 				<div class="row-fluid">
 					<?php 
-						wp_nav_menu( array( 'theme_location' => 'juice-menu', 'menu_class' => 'menu unstyled clearfix' ) );
+						wp_nav_menu( array( 'theme_location' => 'juice-menu', 'menu_class' => 'menu unstyled clearfix','walker' => new Walker_Menu(), ) );
 					?>
 				</div>
 			</div>

@@ -121,6 +121,7 @@ add_filter( 'wp_nav_menu_objects', 'last_first_classes' );
 */
 function last_first_classes( $objects ) {
  
+	
 	// Add "first-menu-item" class to the first menu object
 	$objects[1]->classes[] = 'first-menu-item';
 	 
@@ -129,11 +130,12 @@ function last_first_classes( $objects ) {
 	
 	$i = 1;
 	foreach ($objects as $o) {
-		if ($o->post_parent == 0) {
+		if ($o->menu_item_parent == '0') {
 			$o->classes[] = "item-pos-".$i++;
 		}
 	}
 	 
+// 	var_dump($objects);
 	// Return the menu objects
 	return $objects;
  
@@ -170,6 +172,13 @@ if (class_exists('MultiPostThumbnails')) {
 }
 
 
+require 'classes/Walker_Menu.php';
+
+
+
+//http://stackoverflow.com/questions/15661170/how-to-add-the-optional-menu-css-class-to-body-class
+
+
 // Hook in
 // add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
@@ -201,3 +210,25 @@ if (class_exists('MultiPostThumbnails')) {
 // 	return $fields;
 
 // }
+
+
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function shop_trim_zeros($bool) { return true;}
+function my_theme_wrapper_start() {
+	echo "<div class='content-wrapper'>";
+	echo "<div class='container-fluid'>";
+	echo "<div class='row-fluid top'>";
+	echo "<div class='col-sm-12 content'>";
+}
+
+function my_theme_wrapper_end() {
+	echo "</div>";
+	echo "</div>";
+	echo "</div>";
+	echo "</div>";
+}

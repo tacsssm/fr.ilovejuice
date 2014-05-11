@@ -50,5 +50,18 @@ $(document).ready(function() {
 		$('.single-post .entry-thumbnail').append(iframe);
 	}
 
-	
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 300) {
+			$('.page-scroller.scrollup').fadeIn('slow');
+		} else {
+			$('.page-scroller.scrollup').fadeOut('slow');
+		}
+	});
+
+	$('.scrollup').click(function() {
+		$("html, body").animate({
+			scrollTop : 0
+		}, 600);
+		return false;
+	});
 });

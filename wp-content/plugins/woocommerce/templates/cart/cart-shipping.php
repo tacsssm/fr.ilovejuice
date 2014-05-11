@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 				</select>
 
 			<?php else : ?>
-
+			
 				<ul id="shipping_method">
 					<?php foreach ( $available_methods as $method ) : ?>
 						<li>
