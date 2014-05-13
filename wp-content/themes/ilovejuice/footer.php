@@ -1,5 +1,17 @@
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="col-sm-12 content">
+			<div class="text-wrap">
+				<hr />
+				<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FI-Love-Juice%2F613938715367125&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=1416874395247064" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px; width: 100%" allowTransparency="true"></iframe>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
 </section> 
-<!-- end of dom-content -->
+<!-- end of content -->
 
 <footer>
 </footer>
