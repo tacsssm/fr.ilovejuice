@@ -27,7 +27,7 @@
 			  </div>
 			  <div class="form-group">
 			    <label for="text">Link: </label>
-			    <?php echo get_permalink()?>
+			    <?php echo get_permalink(); ?>
 			  </div>
 			  <div class="form-group">
 			    <label for="text">Captcha</label>
@@ -46,6 +46,7 @@
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
 	        <button type="submit" class="btn btn-primary btn-lg" id="popup-contact-form"><i class="fa fa-envelope-o"></i> Odeslat</button>
 	      </div>
+		    <input type="hidden" id="juice-link" name="juice-link" value="<?php echo get_permalink(); ?>" />
 		</form>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
