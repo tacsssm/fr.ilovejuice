@@ -17,6 +17,10 @@ function f_berries_name_add_scripts() {
 	wp_register_script ( 'fancybox-js-buttons', get_bloginfo ( 'template_directory' ) . '/js/fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5' );
 	wp_register_script ( 'fancybox-js-media', get_bloginfo ( 'template_directory' ) . '/js/fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.6' );
 	wp_register_script ( 'fancybox-js-thumbs', get_bloginfo ( 'template_directory' ) . '/js/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7' );
+	wp_register_script ( 'parsley-remote', get_bloginfo ( 'template_directory' ) . '/js/Parsley.js-2.0.0/dist/parsley.remote.min.js' );
+	wp_register_script ( 'parsley', get_bloginfo ( 'template_directory' ) . '/js/Parsley.js-2.0.0/dist/parsley.min.js' );
+	wp_register_script ( 'parsley-cs', get_bloginfo ( 'template_directory' ) . '/js/Parsley.js-2.0.0/dist/fr.js' );
+	wp_register_script ( 'parsley-cs', get_bloginfo ( 'template_directory' ) . '/js/Parsley.js-2.0.0/dist/fr.extra.js' );
 	wp_register_script ( 'init-js', get_bloginfo ( 'template_directory' ) . '/js/init.js' );
 	
 	
@@ -44,6 +48,9 @@ function f_berries_name_add_scripts() {
 	wp_enqueue_script ( 'fancybox-js-buttons' );
 	wp_enqueue_script ( 'fancybox-js-media' );
 	wp_enqueue_script ( 'fancybox-js-thumbs' );
+	wp_enqueue_script ( 'parsley-remote' );
+	wp_enqueue_script ( 'parsley' );
+	wp_enqueue_script ( 'parsley-cs' );
 	wp_enqueue_script ( 'init-js' );
 	
 	wp_enqueue_style ( 'bootstrap-css' );
@@ -235,4 +242,8 @@ function my_theme_wrapper_end() {
 	echo "</div>";
 	echo "</div>";
 	echo "</div>";
+}
+
+function includeModal() {
+	include dirname(__FILE__). '/modal-kontakt.php';
 }

@@ -64,4 +64,82 @@ $(document).ready(function() {
 		}, 600);
 		return false;
 	});
+	
+	
+	$("#popup-contact-form").click(function(e){
+		
+		var form = $(this).parents('form');
+		var parsley = form.parsley();
+		
+		parsley.asyncValidate()
+	      .done(function () { 
+	    	  if (parsley.isValid()) {
+	    		  e.preventDefault();
+	    		  form.hide();
+	    		  $('#form-sent-info').show('slow');
+	    	  }
+	      })
+	      .fail(function () { })
+	      .always(function () { });
+	});
+
+	$("#modal-captcha-refresh").click(function(event){
+		event.preventDefault();
+		d = new Date();
+		$("#modal-captcha-image").attr("src", "/captcha.php?"+d.getTime());
+	});
+	
+	
+	var request;
+	$("#modal-contact-form").submit(function(event){
+
+		// abort any pending request
+	    if (request) {
+	        request.abort();
+	    }
+	    // setup some local variables
+	    var $form = $(this);
+	    // let's select and cache all the fields
+	    var $inputs = $form.find("input, select, button, textarea");
+	    // serialize the data in the form
+	    var serializedData = $form.serialize();
+
+	    // let's disable the inputs for the duration of the ajax request
+	    // Note: we disable elements AFTER the form data has been serialized.
+	    // Disabled form elements will not be serialized.
+	    $inputs.prop("disabled", true);
+
+	    // fire off the request to /form.php
+	    request = $.ajax({
+	        url: "/form.php",
+	        type: "post",
+	        data: serializedData
+	    });
+
+	    // callback handler that will be called on success
+	    request.done(function (response, textStatus, jqXHR){
+	        // log a message to the console
+	        console.log("Hooray, it worked!");
+	    });
+
+	    // callback handler that will be called on failure
+	    request.fail(function (jqXHR, textStatus, errorThrown){
+	        // log the error to the console
+	        console.error(
+	            "The following error occured: "+
+	            textStatus, errorThrown
+	        );
+	    });
+
+	    // callback handler that will be called regardless
+	    // if the request failed or succeeded
+	    request.always(function () {
+	        // reenable the inputs
+	        $inputs.prop("disabled", false);
+	    });
+
+	    // prevent default posting of form
+	    event.preventDefault();
+	});
+	
 });
