@@ -29,7 +29,7 @@ function f_berries_name_add_scripts() {
 // 	wp_register_style ( 'jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/black-tie/jquery-ui.css' );
 	wp_register_style ( 'dom-css', get_bloginfo ( 'template_directory' ) . '/style.css', array ('bootstrap-css'));
 // 	wp_register_style ( 'dom-css', get_bloginfo ( 'template_directory' ) . '/style.min.css', array ('bootstrap-css'));
-	wp_register_style ( 'awesome', "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", array ('bootstrap-css'));
+	wp_register_style ( 'awesome', "//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css", array ('bootstrap-css'));
 	wp_register_style ( 'common-css', get_bloginfo ( 'template_directory' ) . '/css/common.css' );
 
 	wp_register_style ( 'fancybox-css', get_bloginfo ( 'template_directory' ) . '/js/fancyBox/source/jquery.fancybox.css?v=2.1.5' );

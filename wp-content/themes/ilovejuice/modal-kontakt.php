@@ -4,21 +4,21 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Doporučit džus</h4>
+        <h4 class="modal-title">Recommander un smoothie</h4>
       </div>
 	    <div id="form-sent-info" style="display: none;">
 		     <div class="modal-body">
-		     	<div class="alert alert-success"><strong>Zpráva odeslána!</strong> Děkujeme.</div>
+		     	<div class="alert alert-success"><strong>Message envoyé</strong>, Merci.</div>
 		     </div>
 		     <div class="modal-footer">
-		       <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Zavřít</button>
+		       <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Fermer</button>
 		     </div>
 	    </div>
 	      
 		<form id="modal-contact-form" role="form" data-parsley-validate>
 	      <div class="modal-body">
 			  <div class="form-group">
-			    <label for="email">E-mail kamaráda</label>
+			    <label for="email">Email d'un ami</label>
 			    <input type="email" class="form-control" id="contact-email" placeholder="E-mail" required="required">
 			  </div>
 			  <div class="form-group">
@@ -38,13 +38,13 @@
 					    <i class="fa fa-refresh fa-2x"></i>
 				    </a>
 				    
-				    <input type="text" id="contact-captcha" placeholder="Opište kód z obrázku" required="required" data-parsley-remote="/checkcaptcha.php" data-parsley-remote-options='{ "type": "POST"}'>
+				    <input type="text" id="contact-captcha" placeholder="Copiez le code de cette image" required="required" data-parsley-remote="/checkcaptcha.php" data-parsley-remote-options='{ "type": "POST"}'>
 			    </div>
 			  </div>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
-	        <button type="submit" class="btn btn-primary btn-lg" id="popup-contact-form"><i class="fa fa-envelope-o"></i> Odeslat</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        <button type="submit" class="btn btn-primary btn-lg" id="popup-contact-form"><i class="fa fa-envelope-o"></i> Envoyer</button>
 	      </div>
 		    <input type="hidden" id="juice-link" name="juice-link" value="<?php echo get_permalink(); ?>" />
 		</form>

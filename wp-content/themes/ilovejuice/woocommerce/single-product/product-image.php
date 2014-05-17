@@ -42,7 +42,7 @@ global $post, $woocommerce, $product;
 
 	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
 
-	<a href="#" class="btn btn-block btn-info margin10-top" data-toggle="modal" data-target="#ilj-modal">Doporučit džus</a>
+	<a href="#" class="btn btn-block btn-info margin10-top" data-toggle="modal" data-target="#ilj-modal">Recommander un smoothie</a>
 	
 </div>
 
