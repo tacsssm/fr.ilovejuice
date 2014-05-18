@@ -35,7 +35,6 @@ header {
 	.search-container {
 		padding-left: 0;
 		padding-right: 0;
-		
 		.search {
 			.widget {
 				float: right;
@@ -43,16 +42,18 @@ header {
 					font-size: 17px;
 					margin-right: 12px;
 					a {
-					    border-bottom: 2px solid #B0222D;
-					    color: #851A22;
-					    opacity: 0.8;
-					    &:hover {
-						    opacity: 1;
-						    text-decoration: none;
-					    }					
+						border-bottom: 2px solid #B0222D;
+						color: #851A22;
+						opacity: 0.8;
+						outline: none;
+						&:hover , &:active , &:focus {
+							opacity: 1;
+							text-decoration: none;
+						}
 					}
 				}
 			}
+
 			padding-left: 0;
 			padding-right: 0;
 			padding-top: 15px;
@@ -101,6 +102,25 @@ header {
 			}
 
 			label {
+				font-size: 12px;
+			}
+		}
+	}
+	
+	&.woocommerce-checkout {
+		#shipping_method {
+			input {
+				display: none;
+				& + label {
+					display: none;
+				}
+			}
+			input[checked='checked'] + label {
+				display: block;
+			}
+
+			label {
+				font-size: 12px;
 			}
 		}
 	}
@@ -192,7 +212,12 @@ header {
 				opacity: 1;
 			}
 
+			outline: none;
 			opacity: 0.6;
+		}
+
+		a {
+			outline: none;
 		}
 
 		a:hover {
@@ -221,6 +246,7 @@ header {
 		border-top: solid 1px gray;
 	}
 
+	.woocommerce-info:before,
 	.woocommerce-message:before {
 		height: 2.5em;
 	}
@@ -373,7 +399,7 @@ header {
 	}
 
 	.item-pos-3 {
-		.menu-color (#851a22);
+		.menu-color (#80cc2c);
 	}
 
 	.item-pos-4 {
@@ -431,7 +457,7 @@ header {
 }
 
 .page-id-13 , .parent-pageid-13 {
-	.image-bck ("img/bck07.jpg");
+	.image-bck ("img/bck08.jpg");
 }
 
 .woocommerce-page {
@@ -530,7 +556,6 @@ html .fb_share_button:hover {
 	text-decoration: none;
 }
 
-
 a#modal-captcha-refresh {
 	outline: none;
 	text-decoration: none;
@@ -552,7 +577,7 @@ a#modal-captcha-refresh {
 		border: 1px solid #CCCCCC;
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
 	}
-	
+
 	.modal-footer {
 		margin-top: 0px;
 	}
@@ -561,7 +586,6 @@ a#modal-captcha-refresh {
 #form-sent-info , #modal-contact-form {
 	margin-right: 30px;
 	padding: 20px;
-	
 	.page-template-kosara-style-php & {
 		margin-right: 0;
 	}

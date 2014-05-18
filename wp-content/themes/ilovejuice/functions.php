@@ -187,10 +187,10 @@ require 'classes/Walker_Menu.php';
 
 
 // Hook in
-// add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
-// // Our hooked in function – $fields is passed via the filter!
-// function custom_override_checkout_fields( $fields ) {
+// Our hooked in function – $fields is passed via the filter!
+function custom_override_checkout_fields( $fields ) {
 
 // // 	// we don't need the billing fields so empty all of them except the email
 // // 	unset( $fields['billing_country'] );
@@ -207,16 +207,14 @@ require 'classes/Walker_Menu.php';
 // // 	var_dump($fields);
 	
 // // 	unset($fields['order']['order_comments']);
-// 	if (WC()->session->get( 'chosen_shipping_methods')[0] == 'local_delivery') {
-// 		unset($fields['billing']);
-// 		unset($fields['shipping']);
-// 		$fields['billing']=array();
-// 		$fields['shipping']=array();
-// 	}
+// print_r(WC()->session->get( 'chosen_shipping_methods'));
 
-// 	return $fields;
-
-// }
+	if (WC()->session->get( 'chosen_shipping_methods')[0] == 'local_delivery') {
+		return array();
+	} else {
+		return $fields;
+	}
+}
 
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);

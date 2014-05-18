@@ -73,8 +73,8 @@ $table_prefix  = 'wp_';
  * language support.
  */
 // define('WPLANG', '');
-#define('WPLANG', 'fr_FR');
-define('WPLANG', 'en_US');
+define('WPLANG', 'fr_FR');
+// define('WPLANG', 'en_US');
 
 /**
  * For developers: WordPress debugging mode.
