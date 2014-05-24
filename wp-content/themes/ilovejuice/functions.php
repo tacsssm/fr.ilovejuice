@@ -209,11 +209,13 @@ function custom_override_checkout_fields( $fields ) {
 // // 	unset($fields['order']['order_comments']);
 // print_r(WC()->session->get( 'chosen_shipping_methods'));
 
-	if (WC()->session->get( 'chosen_shipping_methods')[0] == 'local_delivery') {
-		return array();
-	} else {
-		return $fields;
+	$methods = WC()->session->get( 'chosen_shipping_methods');
+	if (is_array($methods)) {
+		if ($methods[0] == 'local_delivery') {
+			return array();
+		}
 	}
+	return $fields;
 }
 
 
