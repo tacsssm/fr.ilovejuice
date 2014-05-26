@@ -186,7 +186,17 @@ require 'classes/Walker_Menu.php';
 //http://stackoverflow.com/questions/15661170/how-to-add-the-optional-menu-css-class-to-body-class
 
 
+function custom_woocommerce_cart_needs_shipping_address( $needAddress ) {
+	$methods = WC()->session->get( 'chosen_shipping_methods');
+	if (is_array($methods)) {
+		if ($methods[0] == 'local_delivery') {
+			return  false;
+		}
+	}
+	return  $needAddress;
+}
 // Hook in
+add_filter( 'woocommerce_cart_needs_shipping_address' , 'custom_woocommerce_cart_needs_shipping_address' );
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
 // Our hooked in function – $fields is passed via the filter!
@@ -209,10 +219,20 @@ function custom_override_checkout_fields( $fields ) {
 // // 	unset($fields['order']['order_comments']);
 // print_r(WC()->session->get( 'chosen_shipping_methods'));
 
+// 	print_r($fields);
+	
 	$methods = WC()->session->get( 'chosen_shipping_methods');
 	if (is_array($methods)) {
 		if ($methods[0] == 'local_delivery') {
-			return array();
+			
+			$newFields = array();
+			$newFields['account'] = $fields['account'];
+			$newFields['order'] = $fields['order'];
+			$newFields['billing'] = array();
+			$newFields['shipping'] = array();
+			$newFields['billing']['billing_email'] = $fields['billing']['billing_email'];
+			$newFields['billing']['billing_email']['required'] = false;
+			return $newFields;
 		}
 	}
 	return $fields;
