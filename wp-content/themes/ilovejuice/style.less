@@ -52,6 +52,18 @@ header {
 							text-decoration: none;
 						}
 					}
+
+					@media (max-width: 690px) {
+						a {
+							border-bottom: none;
+							opacity: 1;
+							background-color: #851A22;
+							color: white;
+							display: block;
+							padding: 5px;
+							margin: 12px 15px;
+						}
+					}
 				}
 			}
 
@@ -758,7 +770,7 @@ a#modal-captcha-refresh {
 	header .logo {
 		a {
 			img {
-				margin: 20px auto;
+				margin: 0 auto 20px auto;
 			}
 		}
 	}
@@ -774,9 +786,20 @@ a#modal-captcha-refresh {
 	header .search-container .search form .input-append {
 		text-align: center;
 	}
-	
-	.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
+
+	.woocommerce #content input.button , .woocommerce #respond input#submit , .woocommerce a.button , .woocommerce button.button , .woocommerce input.button , .woocommerce-page #content input.button , .woocommerce-page #respond input#submit , .woocommerce-page a.button , .woocommerce-page button.button , .woocommerce-page input.button {
 		font-size: 80%;
+	}
+
+	#main-menu {
+		margin: 0;
+		ul {
+			& > li {
+				margin: 0 0 12px;
+			}
+
+			padding: 0 15px;
+		}
 	}
 }
 
