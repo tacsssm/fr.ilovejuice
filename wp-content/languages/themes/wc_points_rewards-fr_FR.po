@@ -1,0 +1,21 @@
+# Translation of Twenty Fourteen in French (France)
+# This file is distributed under the same license as the Twenty Fourteen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-05-26 13:20+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Twenty Fourteen\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Vit Rozkovec <rozkovec.vit@seznam.cz>\n"
+"Language-Team: \n"
+
+msgid "Apply Discount"
+msgstr "Appliquez la réduction"
+
+msgid "Discount Applied Successfully"
+msgstr "Réduction appliquée"
+

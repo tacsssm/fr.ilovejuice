@@ -4,6 +4,7 @@ update_option('siteurl','http://ilovejuice.fr');
 update_option('home','http://ilovejuice.fr');
 
 load_theme_textdomain ( 'ilovejuice' );
+load_theme_textdomain ( 'wc_points_rewards' );
 
 add_theme_support( 'woocommerce' );
 
