@@ -38,6 +38,7 @@
 						<?php 
 							dynamic_sidebar( "search" );	
 						?>			
+						<div class="clearfix"></div>
 					</div>
 				</div>
 			</div>
@@ -45,7 +46,7 @@
 				<div class="row-fluid">
 					<div class="col-sm-12 logo">
 						<a href="/">
-							 <img src="<?php bloginfo('template_directory') ?>/img/logo_sm.jpg" />
+							 <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/logo_sm.jpg" />
 						</a>
 					</div>
 				</div>

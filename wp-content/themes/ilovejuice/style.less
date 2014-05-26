@@ -27,6 +27,7 @@ body {
 	padding: 40px;
 	margin: 0 auto;
 	.kristen ();
+	min-width: 434px;
 }
 
 header {
@@ -89,7 +90,12 @@ header {
 	}
 
 	.logo {
-		line-height: 210px;
+		a {
+			text-align: center;
+			img {
+				margin: 50px auto;
+			}
+		}
 	}
 }
 
@@ -106,7 +112,7 @@ header {
 			}
 		}
 	}
-	
+
 	&.woocommerce-checkout {
 		#shipping_method {
 			input {
@@ -115,6 +121,7 @@ header {
 					display: none;
 				}
 			}
+
 			input[checked='checked'] + label {
 				display: block;
 			}
@@ -246,9 +253,7 @@ header {
 		border-top: solid 1px gray;
 	}
 
-	.woocommerce-error:before,
-	.woocommerce-info:before,
-	.woocommerce-message:before {
+	.woocommerce-error:before , .woocommerce-info:before , .woocommerce-message:before {
 		height: 2.5em;
 	}
 }
@@ -389,6 +394,40 @@ header {
 				color: black;
 			}
 		}
+
+		@media (max-width: 690px) {
+			background-color: @color;
+			opacity: 1;
+			& > a {
+				font-weight: 600;
+				padding: 6px 5px;
+			}
+
+			a {
+				border-bottom: none;
+				color: white;
+				&:hover {
+					color: black;
+					border-bottom: none;
+				}
+			}
+
+			.sub-menu {
+				li {
+					a {
+						color: white;
+						padding: 0;
+						&:hover {
+							color: black;
+							border-bottom: none;
+						}
+					}
+
+					display: block;
+					border-top: solid 1px white;
+				}
+			}
+		}
 	}
 
 	.item-pos-1 {
@@ -474,7 +513,7 @@ header {
 			}
 		}
 	}
-	
+
 	&.woocommerce-cart {
 		.coupon {
 			display: none;
@@ -607,45 +646,148 @@ a#modal-captcha-refresh {
 	display: block;
 }
 
-//@media (min-width: 768px) and (max-width: 1009px) {
 @media (min-width: 830px) and (max-width: 970px) {
 	#main-menu ul > li {
 		margin: 0 5px;
 		font-size: 12px;
 	}
+
 	#juice-content .content .text-wrap {
 		padding: 0 120px;
 	}
 }
+
 @media (min-width: 830px) and (max-width: 970px) {
 	#main-menu ul > li {
 		margin: 0 5px;
 		font-size: 12px;
 	}
+
 	#juice-content .content .text-wrap {
 		padding: 0 120px;
 	}
 }
+
 @media (min-width: 735px) and (max-width: 830px) {
 	#main-menu ul > li {
 		margin: 0 3px;
 		font-size: 11px;
 	}
+
 	#juice-content .content .text-wrap {
 		padding: 0 80px;
 	}
+
+	#juice-content .content h1 {
+		padding-top: 27px;
+		margin: 0;
+	}
+
+	.woocommerce-page .woocommerce-breadcrumb , .woocommerce-page .woocommerce-result-count {
+		margin-top: 0;
+		padding-top: 12px;
+	}
 }
+
 @media (max-width: 735px) {
 	#main-menu ul > li {
 		margin: 0 3px;
 		font-size: 10px;
 	}
+
 	#juice-content .content .text-wrap {
 		padding: 0 80px;
 	}
+
 	#juice-content .content h1 {
+		padding-top: 27px;
 		margin: 0;
+	}
+
+	.woocommerce-page .woocommerce-breadcrumb , .woocommerce-page .woocommerce-result-count {
+		margin-top: 0;
+		padding-top: 12px;
 	}
 }
 
+@media (max-width: 690px) {
+	body {
+		padding: 15px;
+	}
+
+	#main-menu ul > li {
+		margin: 0 3px 12px 3px;
+		font-size: 10px;
+		display: block;
+		text-align: center;
+		a {
+			display: block;
+		}
+
+		.sub-menu {
+			position: relative;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: block;
+			li {
+				display: inline-block;
+			}
+		}
+	}
+
+	#main-menu .active-juice {
+		display: none;
+	}
+
+	#juice-content .content .text-wrap {
+		padding: 0 80px;
+	}
+
+	#juice-content .content h1 {
+		padding-top: 27px;
+		margin: 0;
+	}
+
+	.woocommerce-page .woocommerce-breadcrumb , .woocommerce-page .woocommerce-result-count {
+		margin-top: 0;
+		padding-top: 12px;
+	}
+
+	header .logo {
+		a {
+			img {
+				margin: 20px auto;
+			}
+		}
+	}
+
+	header .search-container .search {
+		text-align: center;
+		.widget {
+			float: none;
+			margin-top: 12px;
+		}
+	}
+
+	header .search-container .search form .input-append {
+		text-align: center;
+	}
+	
+	.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
+		font-size: 80%;
+	}
+}
+
+@media (max-width: 735px) {
+	#juice-content .content .text-wrap {
+		padding: 0 12px;
+	}
+
+	#juice-content .content h1 {
+		padding: 27px 12px 12px 12px;
+		margin: 0;
+	}
+}
 
