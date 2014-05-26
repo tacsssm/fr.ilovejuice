@@ -44,7 +44,9 @@
 			<div class="container-fluid">
 				<div class="row-fluid">
 					<div class="col-sm-12 logo">
-						 <img src="<?php bloginfo('template_directory') ?>/img/logo_sm.jpg" />
+						<a href="/">
+							 <img src="<?php bloginfo('template_directory') ?>/img/logo_sm.jpg" />
+						</a>
 					</div>
 				</div>
 			</div>
