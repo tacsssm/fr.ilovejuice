@@ -1,3 +1,4 @@
 *.log
 wp-content/cache/
 sitemap.xml.gz
+/wp-config.php
